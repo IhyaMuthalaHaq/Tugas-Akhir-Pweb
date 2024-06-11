@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+}
+
+html{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+
+
+/* sign in dan sign up start */
+.btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+/* search start */
+/* Warna latar belakang tombol saat normal */
+.btn-color-change {
+  background-color: #6e71ff;
+  transition: background-color 0.3s; /* Transisi perubahan warna */
+}
+
+/* Warna latar belakang tombol saat di-hover */
+.btn-color-change:hover {
+  background-color: #6e71ff; /* Warna saat tombol di-hover */
+}
+
+/* Warna latar belakang tombol saat di-fokus */
+.btn-color-change:focus {
+  background-color: #6e71ff; /* Warna saat tombol di-fokus */
+  outline: none; /* Menghapus outline bawaan saat tombol difokuskan */
+}
+/* end */
+.full-screen{
+  width: auto;
+}
+
+header {
+  position: relative;
+  height: calc(100vh - 60px); /* Sesuaikan dengan tinggi navbar */
+  overflow: hidden;
+  width: 100%;
+}
+
+header video {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Memastikan video menutupi area dengan proporsi yang tepat */
+}
+header .intro{
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  top: 50%;
+}
+header .intro h2{
+  font-size: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+header .overley{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+  opacity: 50%;
+  z-index: -1;
+}
+/* Gaya untuk section */
+#about {
+  padding: 50px 50px; /* Atur padding sesuai kebutuhan */
+  background-color: #ffffff;
+}
+
+/* Gaya untuk judul h2 */
+#about h2 {
+  font-size: 30px; /* Ubah ukuran font judul */
+  text-align: center; /* Posisi teks ke tengah */
+  position: relative; /* Untuk pseudo-element ::after */
+}
+
+/* Pseudo-element untuk garis bawah pada judul h2 */
+#about h2::after {
+  content: "";
+  border-bottom: 5px solid #686889; /* Ubah warna garis bawah */
+  width: 50px;
+  display: block;
+  margin: 20px auto; /* Jarak antara teks dan garis */
+}
+
+/* Gaya untuk teks about */
+#about {
+  text-align: center; /* Posisi teks ke tengah */
+}
+
+/* Gaya untuk paragraf summary */
+#about .summary {
+  font-size: 18px; /* Ubah ukuran font summary */
+  text-align: center; /* Posisi teks ke tengah */
+}
+#about p.summary{
+  font-size: 18px;
+  font-style: italic;
+  color: rgb(133, 107, 107);
+}
+#about .fill-content p{
+  font-style: normal;
+}
+
+.support {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.support h6{
+  margin: 0px;
+  margin-top: 20px;
+  padding: 0px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.support img {
+  width: 50px;
+}
+.support div {
+  text-align: center;
+  width: 26%;
+}

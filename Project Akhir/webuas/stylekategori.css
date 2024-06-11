@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f4f4f4; 
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: auto; 
+    background-color: #ffffff; 
+    overflow: hidden;
+}
+
+.banner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.banner-overlay {
+  position: absolute;
+  top: 75%;
+  left: 150px; 
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: left; 
+  font-size: 4em;
+  font-weight: bold;
+}
+  
+  .page-title {
+    text-align: center;
+  }
+  
+  .animal-container {
+    max-width: 1200px;
+    margin: 20px auto; 
+    text-align: center; 
+  }
+  
+  .animal-card {
+    width: calc(25% - 20px);
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    cursor: pointer;
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out;
+    margin-top: 25px;
+  }
+  .animal-description {
+    font-size: 0.9em;
+    color: #555;
+  }
+  .animal-card a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+  }
+  .see-more {
+    color: #1d1d1d; 
+    cursor: pointer;
+    font-weight: normal; 
+    font-size: 0.9em; 
+  }
+  
+  .animal-card:hover {
+    transform: scale(1.1);
+  }
+  
+  
+  .animal-img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .animal-title {
+    margin-top: 15px;
+  }
+
+
+@media (max-width: 768px) {
+    .animal-card {
+        width: 100%; 
+    }
+}
+
+.animal-description {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.animal-card a {
+    color: inherit;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+.see-more {
+    color: #1d1d1d;
+    cursor: pointer;
+    font-weight: normal;
+    font-size: 0.9em;
+}
+
+.animal-card:hover {
+    transform: scale(1.1);
+}
+
+.animal-img {
+    max-width: 100%;
+    height: auto;
+}
+
+.animal-title {
+    margin-top: 15px;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
